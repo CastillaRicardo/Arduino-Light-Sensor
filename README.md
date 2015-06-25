@@ -31,3 +31,6 @@
     <li>Connect one end of a transistor next to the negative leg of the LED (i25), and the other to the negative column in the breadboard</li>
     <li>Connect one cable from pin 3 (#2) in Arduino, to a slot next to the positive leg of the LED (i26 used)</li>
 </ul>
+
+<b>Running the program:</b>
+<p>Using the Arduino IDE, verify the code, then load it into the Arduino board</p>
