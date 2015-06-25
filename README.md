@@ -1,8 +1,8 @@
 # Arduino-Light-Sensor
 
-<p>Code for Arduino that create a light sensor</p>
+<p>Create a light sensor with Arduino</p>
 
-<p>Please note that this is not a tutorial. It is a high level guide on how to create a light sensor with the arduino, which turns LEDs on and off depending on the data being collected</p>
+<p>Please note that this is not a tutorial. It is a high level guide on how to create a light sensor with the Arduino. This code turns LEDs on and off depending on the data being collected</p>
 
 <ul>
     <b>Necessary equipment:</b>
