@@ -1,7 +1,7 @@
 /* GLOBALS */
-  const int DARK_LED = 2; // LED to signal darkness
-  const int LIGHT_LED = 4; // LED to signal brightness
-  const int THRESHOLD = 900; // Threshold to check against
+    const int DARK_LED = 2; // LED to signal darkness
+    const int LIGHT_LED = 4; // LED to signal brightness
+    const int THRESHOLD = 900; // Threshold to check against
 /* GLOBALS */
 
 /* void setup
@@ -11,7 +11,7 @@
  */
 void setup()
 {
-  Serial.begin(9600); // start a serial connection
+    Serial.begin(9600); // start a serial connection
 } // setup
 
 /* void loop
@@ -22,14 +22,14 @@ void setup()
  */
 void loop()
 {
-  // read a value from photosensor
-  // using ping ANALOG 0 (A0)
-  int sensorValue = analogRead(A0);
-  // print the value to the Serial Console
-  Serial.println(sensorValue);
-  // wait 20 milliseconds
-  LED_Control(sensorValue);
-  delay(20);
+    // read a value from photosensor
+    // using ping ANALOG 0 (A0)
+    int sensorValue = analogRead(A0);
+    // print the value to the Serial Console
+    Serial.println(sensorValue);
+    // wait 20 milliseconds
+    LED_Control(sensorValue);
+    delay(20);
 } // loop
 
 /* void LED_Control
@@ -39,15 +39,14 @@ void loop()
  */
 void LED_Control(int __value)
 {
-  // if bright
-  if (THRESHOLD >= __value) {
-    digitalWrite(DARK_LED, LOW); // turn off DARK LED
-    digitalWrite(LIGHT_LED, HIGH); // turn on LIGHT LED
-  } // if
-  // it's dark
-  else {
-    digitalWrite(DARK_LED, HIGH); // turn on DARK LED
-    digitalWrite(LIGHT_LED, LOW); // turn off LIGHT LED
-  } // else
+    // if bright
+    if (THRESHOLD >= __value) {
+        digitalWrite(DARK_LED, LOW); // turn off DARK LED
+        digitalWrite(LIGHT_LED, HIGH); // turn on LIGHT LED
+    } // if
+    // it's dark
+    else {
+        digitalWrite(DARK_LED, HIGH); // turn on DARK LED
+        digitalWrite(LIGHT_LED, LOW); // turn off LIGHT LED
+    } // else
 } // LED_Control
-
